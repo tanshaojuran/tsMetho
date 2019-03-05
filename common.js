@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 (function(w){
@@ -177,3 +178,6 @@
     }
 w.tsMethod = tsMethod;
 })(window)
+=======
+
+>>>>>>> 5f76c094cf66510737a6ba56e260ffa94af41173
