@@ -31,48 +31,23 @@
 	var tsMethod={};
 	tsMethod.getHost = function(){//根据环境获取后台访问域名
 		if(window.location.href.indexOf("localhost")>-1 || window.location.href.indexOf("127.0.0.1")>-1  ||  window.location.href.indexOf("192.168")>-1){
-			return "http://api-dev.shouboke.tv"
-//			return  "http://api.shouboke.tv"
+			return "测试接口地址"
 		}
-		//webtest.shouboke
-//		http://www.shouboke.tv/testGkb/index.html#/consulationDetail?articleId=AU  http://www.shouboke.tv/gaokaobaobao/index.html#/consulationDetail?articleId=AU
-		if(window.location.href.indexOf("shouboke.tv/gaokaobao")>-1){
-			return "http://api.shouboke.tv"
+		if(window.location.href.indexOf("你的线上地址关键字")>-1){
+			return "线上接口地址"
 		}
-		if(window.location.href.indexOf("shouboke.tv/testGkb")>-1){
-			return "http://api-dev.shouboke.tv"
-		}
-		if(window.location.href.indexOf("shouboke.tv")>-1){
-			return  "http://api.shouboke.tv"
-		}
-		return  "http://api.shouboke.tv"
 	}
-	//http://shouboke-gaokaobao.oss-cn-beijing.aliyuncs.com/index.html
 	tsMethod.getAppid = function(){//获取公众号appid
-		if(window.location.href.indexOf("shouboke.tv/gaokaobao")>-1){
-//			return "wx18e63e75d50cb458"//手播课
-			return "wxe826ac7e43a1f976"
-//			return "wx3a10e3596024a544"
-		}
-		if(window.location.href.indexOf("shouboke.tv/testGkb")>-1){
-//			return "wx18e63e75d50cb458"
-			return "wx3a10e3596024a544"
-		}
-//		if(window.location.href.indexOf("gk.shouboke.tv")>-1){
-//			return "wx2bdf9454bae8767f"
-//		}
-		return "wxe826ac7e43a1f976"
+		if(window.location.href.indexOf("你的线上链接关键字")>-1){
+			return "你的公众号AppId"
+		｝
 	}
 	tsMethod.webHost = function(){//获取主页
 		if(window.location.href.indexOf("localhost")>-1 || window.location.href.indexOf("127.0.0.1")>-1  ||  window.location.href.indexOf("192.168")>-1){
-//			return "http://dev2-718544363.cn-north-1.elb.amazonaws.com.cn"
-			return  ""
+			return  "你的测试主页链接地址"
 		}
-		if(window.location.href.indexOf("shouboke.tv/gaokaobao")>-1){
-			return "http://www.shouboke.tv/gaokaobao/index.html"
-		}
-		if(window.location.href.indexOf("shouboke.tv/testGkb")>-1){
-			return "http://www.shouboke.tv/testGkb/index.html"
+		if(window.location.href.indexOf("线上链接地址")>-1){
+			return "你的线上主页地址
 		}
 	}
 	tsMethod.setCookie =function(c_name, value, expiredays){
