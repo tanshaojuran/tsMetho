@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-
 (function(w){
 	String.prototype.Trim = function()  //扩展string前后去空格方法
 		{  
@@ -178,6 +175,3 @@
     }
 w.tsMethod = tsMethod;
 })(window)
-=======
-
->>>>>>> 5f76c094cf66510737a6ba56e260ffa94af41173
